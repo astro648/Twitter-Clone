@@ -27,6 +27,13 @@ function addRoom(){
        Room_names = childKey;
       //Start code
       console.log("Room name - "+Room_names);
+      row = "<div class='room_name' id="+Room_names+" onclick = 'redirectToRoom(this.id)'>#"+Room_names+"</div> <hr>";
+      document.getElementById("output").innerHTML += row;
       //End code
       });});}
 getData();
+function redirectToRoom(name){
+  console.log(name);
+  localStorage.setItem("room_name", name);
+  window.location = "kwitter_page.html";
+}
