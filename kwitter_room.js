@@ -26,7 +26,7 @@ function addRoom(){
 }
        Room_names = childKey;
       //Start code
-
+      console.log("Room name - "+Room_names)
       //End code
       });});}
 getData();
