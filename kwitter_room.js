@@ -23,7 +23,6 @@ function addRoom(){
   window.location = "kwitter_page.html";
 }
   function getData() {firebase.database().ref("/").on('value', function(snapshot) {document.getElementById("output").innerHTML = "";snapshot.forEach(function(childSnapshot) {childKey  = childSnapshot.key;
-}
        Room_names = childKey;
       //Start code
       console.log("Room name - "+Room_names);
